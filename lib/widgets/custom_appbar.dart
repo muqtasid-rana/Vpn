@@ -4,12 +4,9 @@ import 'package:vpn_app/constants/colors.dart';
 class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   final double height;
   final String text;
-  final List<Widget> actions;
+  final List<Widget>? actions;
   const CustomAppbar(
-      {super.key,
-      this.height = 60.0,
-      required this.text,
-      required this.actions});
+      {super.key, this.height = 60.0, required this.text, this.actions});
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vpn_app/Views/homescreen/widgets/infoButtons.dart';
 import 'package:vpn_app/Views/homescreen/widgets/widgets.dart';
+import 'package:vpn_app/Views/location_screen/location_screen.dart';
 import 'package:vpn_app/constants/colors.dart';
 import 'package:vpn_app/widgets/custom_appbar.dart';
 
@@ -14,7 +15,10 @@ class HomeScreen extends StatelessWidget {
         Row(
           children: [
             IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => LocationScreen()));
+                },
                 icon: Icon(
                   Icons.settings,
                   color: secondaryColor,
