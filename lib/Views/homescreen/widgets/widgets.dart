@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:vpn_app/Views/homescreen/widgets/infoButtons.dart';
 import 'package:vpn_app/constants/colors.dart';
 import 'package:vpn_app/services/vpn_engine.dart';
-import 'package:vpn_app/services/vpn_provider.dart';
+import 'package:vpn_app/services/providers/vpn_provider.dart';
 
 class Widgets {
   static Widget powerButton(context) {
@@ -65,15 +65,15 @@ class Widgets {
     );
   }
 
-  static Widget showInfo() {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 100),
-          child: InfoButton(text: "Speed", icon: Icons.webhook_sharp),
-        ),
-        InfoButton(text: "Speed", icon: Icons.webhook_sharp)
-      ],
-    );
-  }
+  // static Widget showInfo() {
+  //   return Column(
+  //     children: [
+  //       Padding(
+  //         padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 100),
+  //         child: InfoButton(text: "Speed", icon: Icons.webhook_sharp),
+  //       ),
+  //       InfoButton(text: "Speed", icon: Icons.webhook_sharp)
+  //     ],
+  //   );
+  // }
 }

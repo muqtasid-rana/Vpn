@@ -4,6 +4,7 @@ import 'package:vpn_app/constants/colors.dart';
 class InfoButton extends StatelessWidget {
   final Color color;
   final String text;
+  final String subText;
   final IconData icon;
 
   const InfoButton({
@@ -11,6 +12,7 @@ class InfoButton extends StatelessWidget {
     required this.text,
     required this.icon,
     this.color = kBlue,
+    required this.subText,
   });
 
   @override
@@ -18,8 +20,8 @@ class InfoButton extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: 40,
-          width: 40,
+          height: 50,
+          width: 50,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: color,
@@ -30,6 +32,10 @@ class InfoButton extends StatelessWidget {
         Text(
           text,
           style: const TextStyle(color: secondaryColor),
+        ),
+        Text(
+          text,
+          style: const TextStyle(color: Colors.blueGrey, fontSize: 10),
         ),
       ],
     );

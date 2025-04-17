@@ -39,9 +39,17 @@ class HomeScreen extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: const [
-                      InfoButton(text: "Speed", icon: Icons.speed),
+                      InfoButton(
+                        text: "Speed",
+                        icon: Icons.speed,
+                        subText: 'Speed',
+                      ),
                       SizedBox(height: 20),
-                      InfoButton(text: "Location", icon: Icons.location_on),
+                      InfoButton(
+                        text: "Location",
+                        icon: Icons.location_on,
+                        subText: 'Location',
+                      ),
                     ],
                   ),
                 ),
@@ -50,9 +58,17 @@ class HomeScreen extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: const [
-                      InfoButton(text: "Ping", icon: Icons.network_check),
+                      InfoButton(
+                        text: "Ping",
+                        icon: Icons.network_check,
+                        subText: 'Ping',
+                      ),
                       SizedBox(height: 20),
-                      InfoButton(text: "IP", icon: Icons.wifi),
+                      InfoButton(
+                        text: "IP",
+                        icon: Icons.wifi,
+                        subText: 'IP',
+                      ),
                     ],
                   ),
                 ),
